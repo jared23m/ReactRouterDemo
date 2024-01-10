@@ -12,13 +12,13 @@ function App() {
       <div id="navbar">
         <Link className="navLink" id="blueLink" to={"/blue"}>Blue</Link>
         <Link className="navLink" id="redLink" to={"/red"}>Red</Link>
-        <Link className="navLink" id="homeLink" to={"/home"}>Home</Link>
+        <Link className="navLink" id="homeLink" to={"/"}>Home</Link>
       </div>
       <div id="main-section">
         <Routes>
           <Route path="/blue" element={<Blue />}/>
           <Route path="/red" element={<Red />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </div>
